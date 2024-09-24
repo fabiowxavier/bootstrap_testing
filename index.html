@@ -20,16 +20,27 @@
     <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
       aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span></button>
-   
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-    <ul class="navbar-nav mr-auto">
-      <li class="active nav-item mr-2">
-        <a class="nav-link" href="/"> Home</a></li>
-      <li class="nav-item mr-2">
-        <a class="nav-link" href="/about"> About</a></li>
-      <li class="nav-item mr-2 d-block d-sm-none">
-        <a class="nav-link" href="/login"> Sign In / Sign Up</a></li>
-    </ul>
+
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav mr-auto">
+        <li class="active nav-item mr-2">
+          <a class="nav-link" href="/"> Home</a></li>
+        <li class="nav-item mr-2">
+          <a class="nav-link" href="/about"> About</a></li>
+        <li class="nav-item dropdown"></li>
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Whiskeys
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">Irish</a>
+          <a class="dropdown-item" href="#">Scotch</a>
+          <a class="dropdown-item" href="#">Japanese</a>
+          <a class="dropdown-item" href="#">American</a>
+      </div>
+        <li class="nav-item mr-2 d-block d-sm-none">
+          <a class="nav-link" href="/login"> Sign In / Sign Up</a></li>
+      </ul>
     </div>
 
     <div class="d-none d-md-block">
@@ -50,19 +61,17 @@
     <!-- Callout -->
     <div class="row">
       <div class="col-12">
-        <section class="callout jumbotron text-center">
-          <h1>The finest whiskeys delivered to your doorstep.</h1>
-          <p class="lead">Sign up today to start receiving the world's best whiskeys every month. <s
-              class="d-none d-sm-inline">€19.99</s>
-            <span class="d-inline d-sm-none"><br></span>
-            <strong><mark>First one is free!</mark></strong></p>
-          <p class="btn btn-success btn-lg">Sign Up!</p>
-          <p class="text-muted"><small> You must be over 18 to sign up to our service. Please, drink responsibly
-            </small>
-          </p>
-        </section>
+          <section class="callout jumbotron text-center">
+              <h1>The finest whiskeys delivered to your doorstep.</h1>
+              <p class="lead">Sign up today to start receiving the world's best whiskeys every month.
+                  <s class="d-none d-sm-inline">€19.99</s>
+                  <span class="d-inline d-sm-none"><br></span>
+                  <strong><mark>First one is free!</mark></strong></p>
+              <p><button class="btn btn-lg btn-success" data-toggle="modal" data-target="#signUpModal">Sign Up!</button></p>
+              <p class="text-muted"><small>You must be over 18 to sign up to our service. Please drink responsibly.</small></p>
+          </section>
       </div>
-    </div>
+  </div>
     <!-- /.callout -->
     <hr>
 
@@ -151,6 +160,26 @@
     </section>
     <!-- /.features -->
   </article>
+
+  <div class="modal" tabindex="-1" role="dialog" id="signUpModal">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Modal body text goes here.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
   </script>
