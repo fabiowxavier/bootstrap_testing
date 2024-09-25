@@ -2,8 +2,19 @@ body {
     font-family: 'roboto', sans-serif;
 }
 
-.alert-container{}
+.alert-container .col-12{
+    padding-left:0;
+    padding-right:0;
+}
 
+.site-wide-alert {
+    border-radius: 0;
+    margin-bottom: 0;
+    padding: 5px 15px;
+    background-color: #dfa425;
+    border-color: #dfa425;
+
+}
 .callout-container{
     height: 100vh;
     background: url("../images/whiskey-background.jpg") no-repeat bottom right fixed; 
@@ -49,6 +60,34 @@ body {
 .block-divider--short {
     width: 35px;
 }
+/*navbar*/
+
+.navalert-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: 0;
+    padding-right: 0;
+    z-index: 1;
+}
+
+.navbar {
+    margin-bottom: 0;
+    border: 0;
+    width: 100%;
+    background-color: rgba(red, green, blue, 0.25);
+}
+
+.navbar .navbar-toggler {
+    border:0;
+}
+.navbar-brand {
+    font-weight: bold;
+}
+ 
+.navbar .navbar-nav a {
+    font-weight: bold;
+}
 
 /*jumbotron*/
 
@@ -72,7 +111,8 @@ body {
     font-size: 1.25rem;
     font-weight: 300;
     margin: 25px;
-    color: #5fa5ae;
+    color: white;
+    font-weight: bold;
 }
 
 /*buttons*/
