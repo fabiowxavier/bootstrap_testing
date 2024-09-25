@@ -37,7 +37,7 @@
           <a class="dropdown-item" href="#">Scotch</a>
           <a class="dropdown-item" href="#">Japanese</a>
           <a class="dropdown-item" href="#">American</a>
-      </div>
+        </div>
         <li class="nav-item mr-2 d-block d-sm-none">
           <a class="nav-link" href="/login"> Sign In / Sign Up</a></li>
       </ul>
@@ -61,17 +61,18 @@
     <!-- Callout -->
     <div class="row">
       <div class="col-12">
-          <section class="callout jumbotron text-center">
-              <h1>The finest whiskeys delivered to your doorstep.</h1>
-              <p class="lead">Sign up today to start receiving the world's best whiskeys every month.
-                  <s class="d-none d-sm-inline">€19.99</s>
-                  <span class="d-inline d-sm-none"><br></span>
-                  <strong><mark>First one is free!</mark></strong></p>
-              <p><button class="btn btn-lg btn-success" data-toggle="modal" data-target="#signUpModal">Sign Up!</button></p>
-              <p class="text-muted"><small>You must be over 18 to sign up to our service. Please drink responsibly.</small></p>
-          </section>
+        <section class="callout jumbotron text-center">
+          <h1>The finest whiskeys delivered to your doorstep.</h1>
+          <p class="lead">Sign up today to start receiving the world's best whiskeys every month.
+            <s class="d-none d-sm-inline">€19.99</s>
+            <span class="d-inline d-sm-none"><br></span>
+            <strong><mark>First one is free!</mark></strong></p>
+          <p><button class="btn btn-lg btn-success" data-toggle="modal" data-target="#signUpModal">Sign Up!</button></p>
+          <p class="text-muted"><small>You must be over 18 to sign up to our service. Please drink responsibly.</small>
+          </p>
+        </section>
       </div>
-  </div>
+    </div>
     <!-- /.callout -->
     <hr>
 
@@ -165,17 +166,29 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title">Modal title</h5>
+          <h5 class="modal-title">Sign Up To Whiskey Drop</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body">
-          <p>Modal body text goes here.</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                placeholder="Enter email">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" class="form-control" id="password" placeholder="Password">
+            </div>
+            <div class="form-group">
+              <label for="repeatPassword">Repeat Password</label>
+              <input type="password" class="form-control" id="repeatPassword" placeholder="Repeat Password">
+            </div>
+            <button type="submit" class="btn btn-success">Submit</button>
+          </form>
         </div>
       </div>
     </div>
