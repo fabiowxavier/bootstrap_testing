@@ -7,9 +7,9 @@
   <title>Whiskey Drop | Taste a new whiskey every month</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
     integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css" type="text/css">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous">
@@ -53,8 +53,8 @@
       <a href="/login">Sign In / Sign Up</a>
     </div>
   </nav>
-  <article class="container mt-3">
-    <!--Atention grabbing box-->
+  <!--<div class="container alert-container">
+    <!--Atention grabbing box
     <div class="row d-none d-sm-block">
       <div class="col-12">
         <div class="alert alert-warning">
@@ -63,11 +63,14 @@
         </div>
       </div>
     </div>
+  </div> -->
+  <div class="container-fluid callout-container">
     <!-- Callout -->
     <div class="row">
       <div class="col-12">
         <section class="callout jumbotron text-center">
-          <h1>The finest whiskeys delivered to your doorstep.</h1>
+          <h1 class="jumbotron-header">The finest whiskeys delivered to your doorstep.</h1>
+          <hr> 
           <p class="lead">Sign up today to start receiving the world's best whiskeys every month.
             <s class="d-none d-sm-inline">€19.99</s>
             <span class="d-inline d-sm-none"><br></span>
@@ -79,9 +82,10 @@
       </div>
     </div>
     <!-- /.callout -->
-    <hr>
+  </div>
 
-    <!-- Quotes -->
+  <!-- Quotes -->
+  <div class="container quotes-container">
     <section class="quotes">
       <div class="row">
         <div class="col-12 my-5">
@@ -118,9 +122,10 @@
       </div>
     </section>
     <!-- /.quotes -->
-    <hr>
+  </div>
 
-    <!-- Features -->
+  <!-- Features -->
+  <div class="features-container">
     <section class="features">
       <div class="row">
         <div class="col-12 my-5">
@@ -164,7 +169,8 @@
         </div>
       </div>
     </section>
-    <!-- /.features -->
+  </div>
+  <!-- /.features -->
   </article>
 
   <div class="modal" tabindex="-1" role="dialog" id="signUpModal">
